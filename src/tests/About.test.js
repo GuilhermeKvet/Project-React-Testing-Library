@@ -1,3 +1,3 @@
-test('', () => {
-  'oi';
+describe('Testando componente About', () => {
+  test('', () => {});
 });
