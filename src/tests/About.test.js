@@ -16,7 +16,7 @@ describe('Testando componente About', () => {
 
   test('Teste se a página contém um heading h2 com o texto About Pokédex', () => {
     renderWithRouter(<About />);
-    const aboutTitle = screen.getByRole('heading', { name: /about pokédex/i });
+    const aboutTitle = screen.getByRole('heading', { name: /about pokédex/i, level: 2 });
     expect(aboutTitle).toBeInTheDocument();
   });
 
