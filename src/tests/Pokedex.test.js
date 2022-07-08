@@ -59,6 +59,9 @@ describe('Testando a pokedex', () => {
       filters.forEach((filter, index) => {
         expect(filterButtons[index]).toBeInTheDocument();
         expect(filterButtons[index]).toHaveTextContent(filter);
+        const buttonQuantity = filterButtons
+          .filter((button) => button.innerHTML === filter);
+        expect(buttonQuantity).toHaveLength(1);
       });
 
       const SEVEN = 7;
